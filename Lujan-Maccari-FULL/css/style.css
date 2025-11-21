@@ -6,6 +6,24 @@
   --font-body: "League Spartan", sans-serif;
 }
 
+@font-face {
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-Regular.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +32,7 @@
 
 body {
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 12px;
   color: var(--very-dark-gray);
 }
 
@@ -182,7 +200,7 @@ body {
   }
 
   .main-img {
-    height: 70vh;
+    height: 50vh;
     background-image: url("../images/mobile-image-hero-1.jpg");
   }
 
