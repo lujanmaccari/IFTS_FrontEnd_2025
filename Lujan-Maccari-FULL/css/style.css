@@ -14,14 +14,14 @@
 
 body {
     font-family: var(--font-body);
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px → 0.75rem (base 16px) */
     color: var(--very-dark-gray);
 }
 
 .header {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem; /* 20px → 1.25rem */
     position: absolute;
     width: 100%;
     z-index: 10;
@@ -29,15 +29,14 @@ body {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px → 1.5rem */
     font-weight: 700;
-    margin-right: 30px;
+    margin-right: 1.875rem; /* 30px → 1.875rem */
 }
 
 .nav ul {
     display: flex;
-    gap: 20px;
-    list-style: none;
+    gap: 1.25rem; /* 20px → 1.25rem */
 }
 
 .nav a {
@@ -77,64 +76,59 @@ body {
     background-image: url("../images/desktop-image-hero-1.jpg");
     background-size: cover;
     background-position: center;
-    height: 450px;
-}
+    height: 37.5vh; 
 
 .hero-content {
-    padding: 40px;
+    padding: 2.5rem; 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .hero-content h1 {
-    font-size: 32px;
+    font-size: 2.6667rem; 
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 1.25rem; 
 }
 
 .hero-content p {
     color: var(--dark-gray);
     line-height: 1.4;
-    margin-bottom: 20px;
+    margin-bottom: 1.6667rem;
 }
 
 .btn-shop {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 12px 25px;
+    background-color: transparent;
+    color: var(--black);
     border: none;
     cursor: pointer;
     font-weight: 600;
-    letter-spacing: 2px;
-}
-
-.btn-shop:hover {
-    background-color: var(--very-dark-gray);
+    letter-spacing: 0.75rem;
+    height: fit-content;;
 }
 
 .about {
     display: grid;
     grid-template-columns: 1fr 1.2fr 1fr;
-    margin-top: 40px;
 }
 
 .about-img {
     background-image: url("../images/image-about-dark.jpg");
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 16.6667vh;
 }
 
 .about-text {
-    padding: 40px;
+    padding: 2.5rem; 
 }
 
 .about-text h2 {
-    font-size: 20px;
+    color: var(--black);
+    font-size: 1.6667rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+    letter-spacing: 0.125rem; 
+    margin-bottom: 0.8333rem;
 }
 
 .about-text p {
@@ -146,15 +140,7 @@ body {
     background-image: url("../images/image-about-light.jpg");
     background-size: cover;
     background-position: center;
-    height: 200px;
-}
-
-.footer {
-    background-color: var(--black);
-    color: var(--white);
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    height: 16.6667vh;
 }
 
 /* ---------------------- RESPONSIVE ---------------------- */
@@ -177,7 +163,7 @@ body {
     }
 
     .hero-img {
-        height: 300px;
+        height: 30vh; /* 300px → 30vh */
         background-image: url("../images/mobile-image-hero-1.jpg");
     }
 
@@ -187,7 +173,7 @@ body {
 
     .about-img, 
     .about-img2 {
-        height: 180px;
+        height: 15vh; /* 180px → 15vh */
     }
     .desktop-header {
         display: none;
