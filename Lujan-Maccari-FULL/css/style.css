@@ -1,192 +1,256 @@
 :root {
-    --dark-gray: hsl(0, 0%, 63%);
-    --black: hsl(0, 0%, 0%);
-    --white: hsl(0, 0%, 100%);
-    --very-dark-gray: hsl(0, 0%, 27%);
-    --font-body: "League Spartan", sans-serif;
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+  --font-body: "League Spartan", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-body);
-    font-size: 0.75rem; /* 12px → 0.75rem (base 16px) */
-    color: var(--very-dark-gray);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--very-dark-gray);
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    padding: 1.25rem; /* 20px → 1.25rem */
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    color: var(--white);
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  color: var(--white);
+  margin: 2rem;
 }
 
 .logo {
-    font-size: 1.5rem; /* 24px → 1.5rem */
-    font-weight: 700;
-    margin-right: 1.875rem; /* 30px → 1.875rem */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 1.85rem;
 }
 
 .nav ul {
-    display: flex;
-    gap: 1.25rem; /* 20px → 1.25rem */
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
 }
 
 .nav a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .mobile-header {
-    display: none; /* solo se ve en mobile */
-    width: 100%;
-    display: flex;
-    align-items: center;
+  display: none; /* solo se ve en mobile */
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .menu-icon img {
-    width: 26px;
-    cursor: pointer;
+  width: 26px;
+  cursor: pointer;
 }
 
 .logo-text {
-    font-family: var(--font-body);
-    font-weight: 700;
-    font-size: 24px;
-    margin: 0 auto;
-    color: var(--white);
-    letter-spacing: 1px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.hero {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    width: 100%;
+.main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
 }
 
-.hero-img {
-    background-image: url("../images/desktop-image-hero-1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 37.5vh; /* 450px → 37.5vh (relativo al viewport) */}
-
-.hero-content {
-    padding: 2.5rem; /* 40px → 2.5rem */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.main-img {
+  background-image: url("../images/desktop-image-hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
 }
 
-.hero-content h1 {
-    font-size: 2.6667rem; /* 32px → 2.6667rem */
-    font-weight: 700;
-    margin-bottom: 1.25rem; /* 15px → 1.25rem */
+.main-content {
+  position: relative;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
 }
 
-.hero-content p {
-    color: var(--dark-gray);
-    line-height: 1.4;
-    margin-bottom: 1.6667rem; /* 20px → 1.6667rem */
+.main-content h1 {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.main-content p {
+  color: var(--dark-gray);
+  line-height: 1.4;
+  margin-bottom: 1.65rem;
 }
 
 .btn-shop {
-    background-color: transparent;
-    color: var(--black);
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    letter-spacing: 0.75rem; /* 2px → 0.125rem */
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.75rem;
 }
 
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  align-items: center;
 }
 
 .about-img {
-    background-image: url("../images/image-about-dark.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 16.6667vh; /* 200px → 16.6667vh */
+  background-image: url("../images/image-about-dark.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .about-text {
-    padding: 2.5rem; /* 40px → 2.5rem */
+  padding: 2.5rem;
 }
 
 .about-text h2 {
-    color: var(--black);
-    font-size: 1.6667rem; /* 20px → 1.6667rem */
-    text-transform: uppercase;
-    letter-spacing: 0.125rem; /* 2px → 0.125rem */
-    margin-bottom: 0.8333rem; /* 10px → 0.8333rem */
+  color: var(--black);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  margin-bottom: 0.8rem;
 }
 
 .about-text p {
-    color: var(--dark-gray);
-    line-height: 1.4;
+  color: var(--dark-gray);
+  line-height: 1.4;
 }
 
 .about-img2 {
-    background-image: url("../images/image-about-light.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 16.6667vh; /* 200px → 16.6667vh */
+  background-image: url("../images/image-about-light.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
 }
 
-/* ---------------------- RESPONSIVE ---------------------- */
+.main-img3 {
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  background: black;
+}
+
+.arrows img {
+  padding: 1rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+/* ---------------------- RESPONSIVE - MOBILE ---------------------- */
 @media (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+  }
 
-    .mobile-header {
-        display: flex;
-    }
+  .nav {
+    display: none;
+  }
 
-    .nav {
-        display: none;
-    }
+  .logo {
+    display: none;
+  }
 
-    .logo {
-        display: none;
-    }
+  .main {
+    grid-template-columns: 1fr;
+  }
 
-    .hero {
-        grid-template-columns: 1fr;
-    }
+  .main-img {
+    height: 70vh;
+    background-image: url("../images/mobile-image-hero-1.jpg");
+  }
 
-    .hero-img {
-        height: 30vh; /* 300px → 30vh */
-        background-image: url("../images/mobile-image-hero-1.jpg");
-    }
+  .about {
+    grid-template-columns: 1fr;
+  }
 
-    .about {
-        grid-template-columns: 1fr;
-    }
+  .about-img,
+  .about-img2 {
+    height: 45vh;
+  }
 
-    .about-img, 
-    .about-img2 {
-        height: 15vh; /* 180px → 15vh */
-    }
-    .desktop-header {
-        display: none;
-    }
+  .desktop-header {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+  .arrows {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
+/* ---------------------- RESPONSIVE - DESKTOP ---------------------- */
 @media (min-width: 769px) {
-    .mobile-header {
-        display: none;
-    }
+  .mobile-header {
+    display: none;
+  }
 
-    .desktop-header {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
+  .desktop-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .main-img2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background: var(--black);
+  }
+
+  .about-img,
+  .about-img2 {
+    height: 35vh;
+  }
+
+  .main-content {
+    width: 70%;
+  }
+
+  .main-img2 img {
+    padding: 1rem;
+    width: 3rem;
+  }
+
+  .arrows {
+    position: absolute;
+    right: -6rem;
+    bottom: 0;
+  }
+
+  .arrows img {
+    width: 3rem;
+    padding: 1rem;
+  }
 }
