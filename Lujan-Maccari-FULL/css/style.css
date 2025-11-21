@@ -140,7 +140,7 @@ body {
     background-image: url("../images/image-about-light.jpg");
     background-size: cover;
     background-position: center;
-    height: 16.6667vh;
+    height: 16.6667vh; /* 200px → 16.6667vh */
 }
 
 /* ---------------------- RESPONSIVE ---------------------- */
@@ -190,4 +190,5 @@ body {
         align-items: center;
         gap: 30px;
     }
+}
 }
