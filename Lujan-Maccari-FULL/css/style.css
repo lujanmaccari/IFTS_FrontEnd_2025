@@ -44,7 +44,6 @@ body {
   width: 100%;
   z-index: 10;
   color: var(--white);
-  margin: 2rem;
 }
 
 .logo {
